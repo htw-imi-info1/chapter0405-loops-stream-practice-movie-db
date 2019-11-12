@@ -15,3 +15,18 @@ for ...
 Ex 2) add title field to movie
 Ex 3) print all movies with titles containing a searchString
 Ex 4) delete all movies with an exact given title
+
+-- the same with director
+
+Ex 5) add a director field to movie
+Ex 6) print all movies conducted by a certain director
+Ex 7) delete all movies from a certain director
+
+-- more plain for loop
+Ex 8) in ArrayAndForLoop, add a method int min(int[] a) that returns the index of the largest element.
+Ex 9) in ArrayAndForLoop, add a method int sum(int[] a) that returns the sum of the largest element.
+
+-- for the bored
+Ex 10) add an actors collection field to movie - this includes a new field actor!
+Ex 11) print all movies starring a certain director
+Ex 12) delete all movies with a certain actor
