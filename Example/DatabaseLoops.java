@@ -37,6 +37,17 @@ public class DatabaseLoops
             }
         }
     }
+    // Ex 4) delete all movies with an exact given title
+    public void deleteWithTitle(String searchString){
+    int i = 0;
+    for(Movie movie: collection){     
+            if (searchString.equals(movie.getTitle())){
+                collection.remove(i);
+            } else
+                i++;
+        }
+        
+    }
     public void printWatchedInYear(int year){
         for (Movie movie: collection){
             if (movie.getReleaseYear() == year)
