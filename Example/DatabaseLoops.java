@@ -14,9 +14,9 @@ public class DatabaseLoops
      * you can just use this method.
      */
     public void printAll(){
-        System.out.println(collection.stream()
-            .map(e -> e.toString())
-            .collect(Collectors.joining("\n")));
+        for (Movie movie: collection){
+            System.out.println(movie);
+        }
     }
 
     private void generateSomeTestData(){
@@ -26,7 +26,8 @@ public class DatabaseLoops
         collection.add(new Movie(1972,"The Godfather","Francis Ford Coppola"));
         collection.add(new Movie(2001,"Lord of the rings","Peter Jackson"));
         collection.add(new Movie(2012,"Avengers","Joss Whedon"));
-        collection.add(new Movie(1999,"The Matrix","1999","Lana Wachowski"));
+        collection.add(new Movie(2019,"Film without director"));
+        collection.add(new Movie(1999,"The Matrix","Lana Wachowski"));
         collection.add(new Movie(1994,"Pulp Fiction","Quentin Tarantino"));
     }
     // Ex 3) print all movies with titles containing a searchString
@@ -48,6 +49,16 @@ public class DatabaseLoops
             }
         }
 
+    }
+    // Ex 6) print all movies directed by a certain director
+    // it just looks for a name containing the string
+    // and checks for null
+    public void printForDirector(String director){
+        for (Movie movie: collection){
+            if ((movie.getDirector() != null) && 
+            movie.getDirector().contains(director))
+                System.out.println(movie);
+        }
     }
 
     public void printWatchedInYear(int year){
