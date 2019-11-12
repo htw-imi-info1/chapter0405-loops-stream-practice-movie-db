@@ -23,11 +23,11 @@ public class DatabaseWithStream
         // if you have a constructor accepting all your 
         // fields, it's easy to create the test data
         // in one row like this:
-        collection.add(new Movie(1950));
-        collection.add(new Movie(1951));
-        collection.add(new Movie(1950));
-        collection.add(new Movie(1951));
-        collection.add(new Movie(1952));
+        collection.add(new Movie(1950,"The Godfather"));
+        collection.add(new Movie(1951,"Lord of the rings"));
+        collection.add(new Movie(1950,"Avengers"));
+        collection.add(new Movie(1951,"Matrix"));
+        collection.add(new Movie(1952,"Pulp Fiction"));
     }
 
     public void printWatchedInYear(int year){
