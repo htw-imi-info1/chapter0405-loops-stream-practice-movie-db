@@ -4,10 +4,10 @@ Examples given:
 1) Find all movies that you watched released in 2016
 2) Delete all movies released in a given year
 
-Exercises: 
+Exercises:
 
 Ex 1)
-Given an array of numbers, print out all the 
+Given an array of numbers, print out all the
 numbers in the array, using a for loop. 
 int[] numbers = { 4, 1, 22, 9, 14, 3, 9}; 
 for ...
@@ -23,8 +23,7 @@ Ex 6) print all movies conducted by a certain director
 Ex 7) delete all movies from a certain director
 
 -- more plain for loop
-Ex 8) in ArrayAndForLoop, add a method int min(int[] a) that returns the index of the largest element.
-Ex 9) in ArrayAndForLoop, add a method int sum(int[] a) that returns the sum of the largest element.
+Ex 8) in ArrayAndForLoop, add a method int min(int[] a) that returns the index of the smallest element.
 
 -- for the bored
 Ex 10) add an actors collection field to movie - this includes a new field actor!
