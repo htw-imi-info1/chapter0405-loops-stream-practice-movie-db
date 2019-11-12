@@ -2,4 +2,8 @@
 comment0.target=ArrayAndForLoop
 comment1.params=
 comment1.target=void\ printAllNumbersInArray()
-numComments=2
+comment2.params=a
+comment2.target=int\ min(int[])
+comment3.params=
+comment3.target=void\ demoMin()
+numComments=4

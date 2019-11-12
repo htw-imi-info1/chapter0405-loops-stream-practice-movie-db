@@ -6,8 +6,8 @@ Examples given:
 
 Exercises:
 
-Ex 1)
-Given an array of numbers, print out all the
+Ex 1) print out all the numbers:
+Given an array of numbers, print out all the 
 numbers in the array, using a for loop. 
 int[] numbers = { 4, 1, 22, 9, 14, 3, 9}; 
 for ...
@@ -27,6 +27,8 @@ Ex 8) in ArrayAndForLoop, add a method int min(int[] a) that returns the index o
 Ex 9) in ArrayAndForLoop, add a method int sum(int[] a) that returns the sum of all elements in the array.
 Ex 13) Print all Movies with a number using a for loop.
 
+
+Ex 13) Print all Movies with a number using a for loop.
 
 -- for the bored
 Ex 10) add an actors collection field to movie - this includes a new field actor!
