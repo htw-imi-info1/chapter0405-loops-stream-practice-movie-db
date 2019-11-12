@@ -23,11 +23,11 @@ public class DatabaseLoops
         // if you have a constructor accepting all your 
         // fields, it's easy to create the test data
         // in one row like this:
-        collection.add(new Movie(1950,"The Godfather"));
-        collection.add(new Movie(1951,"Lord of the rings"));
-        collection.add(new Movie(1950,"Avengers"));
-        collection.add(new Movie(1951,"Matrix"));
-        collection.add(new Movie(1952,"Pulp Fiction"));
+        collection.add(new Movie(1972,"The Godfather","Francis Ford Coppola"));
+        collection.add(new Movie(2001,"Lord of the rings","Peter Jackson"));
+        collection.add(new Movie(2012,"Avengers","Joss Whedon"));
+        collection.add(new Movie(1999,"The Matrix","1999","Lana Wachowski"));
+        collection.add(new Movie(1994,"Pulp Fiction","Quentin Tarantino"));
     }
     // Ex 3) print all movies with titles containing a searchString
     public void printAllContainingTitle(String searchString){
