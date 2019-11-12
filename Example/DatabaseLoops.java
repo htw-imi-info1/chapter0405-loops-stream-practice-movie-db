@@ -18,6 +18,12 @@ public class DatabaseLoops
             System.out.println(movie);
         }
     }
+    // Ex 13) Print all Movies with a number using a for loop.
+    public void printAllWithNumbers(){
+        for (int i = 0;i<collection.size(); i++){
+            System.out.println(i + ". " + collection.get(i));
+        }
+    }
 
     private void generateSomeTestData(){
         // if you have a constructor accepting all your 
@@ -98,5 +104,4 @@ public class DatabaseLoops
     public void demo1(){
         System.out.println(getWatchedInYear(1950));
     }
-
 }
