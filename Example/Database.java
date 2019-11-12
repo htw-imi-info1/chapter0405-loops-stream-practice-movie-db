@@ -2,10 +2,8 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.stream.Collectors;
-// rename accordingly, eg. MermaidDatabase
 public class Database
 {
-    // you need to adapt the type parameter (Movie)!
     ArrayList<Movie> collection = new ArrayList<>();
 
     public Database(){
