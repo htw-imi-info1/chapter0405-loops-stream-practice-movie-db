@@ -2,11 +2,11 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.stream.Collectors;
-public class Database
+public class DatabaseWithStream
 {
     ArrayList<Movie> collection = new ArrayList<>();
 
-    public Database(){
+    public DatabaseWithStream(){
         generateSomeTestData();
     }
 
@@ -43,22 +43,6 @@ public class Database
         .collect(Collectors.joining("\n"));
     }
 
-    public void printWatchedInYearLoop(int year){
-        for (Movie movie: collection){
-            if (movie.getReleaseYear() == year)
-                System.out.println(movie.toString());
-        }
-    }
-
-    public String getWatchedInYearLoop(int year){
-        String result ="";
-        for (Movie movie: collection){
-            if (movie.getReleaseYear() == year)
-                result = movie.toString()+"\n";
-        }
-        return result;
-    }
-
     public void removeWatchedInYear(int year){
         // see last slide chapter 5
         // Removal from a Collection Using a Predicate Lambda
@@ -66,14 +50,6 @@ public class Database
         .removeIf(movie -> movie.getReleaseYear() == year);
     }
 
-    public void removeWatchedInYearLoop(int year){    
-        Iterator<Movie> it = collection.iterator();
-        while (it.hasNext()){
-            Movie m = it.next();
-            if(m.getReleaseYear() == year)
-                it.remove();         
-        }
-    }
 
     public void demo1(){
         System.out.println(getWatchedInYear(1950));
