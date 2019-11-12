@@ -23,7 +23,7 @@ public class DatabaseLoops
         // if you have a constructor accepting all your 
         // fields, it's easy to create the test data
         // in one row like this:
-        collection.add(new Movie(1950));
+        collection.add(new Movie(1950,"The Godfather"));
         collection.add(new Movie(1951));
         collection.add(new Movie(1950));
         collection.add(new Movie(1951));

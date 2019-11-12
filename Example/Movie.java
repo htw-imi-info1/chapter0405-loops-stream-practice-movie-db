@@ -4,8 +4,12 @@ public class Movie
     private int releaseYear = 0;
     private String title; 
 
-    public Movie(int releaseYear, String title){
+    public Movie(int releaseYear){
         this.releaseYear = releaseYear;
+    }
+
+    public Movie(int releaseYear, String title){
+        this(releaseYear);
         this.title = title;
     }
 
