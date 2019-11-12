@@ -48,7 +48,6 @@ public class DatabaseLoops
                 iterator.remove();
             }
         }
-
     }
     // Ex 6) print all movies directed by a certain director
     // it just looks for a name containing the string
@@ -58,6 +57,16 @@ public class DatabaseLoops
             if ((movie.getDirector() != null) && 
             movie.getDirector().contains(director))
                 System.out.println(movie);
+        }
+    }
+    //Ex 7) delete all movies from a certain director
+    public void deleteWithDirector(String searchString){
+        Iterator<Movie> iterator = collection.iterator();
+        while(iterator.hasNext()){    
+            Movie movie = iterator.next();
+            if (searchString.equals(movie.getDirector())){
+                iterator.remove();
+            }
         }
     }
 
