@@ -29,7 +29,14 @@ public class DatabaseLoops
         collection.add(new Movie(1951));
         collection.add(new Movie(1952));
     }
-
+    // Ex 3) print all movies with titles containing a searchString
+    public void printAllContainingTitle(String searchString){
+        for(Movie movie: collection){
+            if (movie.getTitle().contains(searchString)){
+                System.out.println(movie);
+            }
+        }
+    }
     public void printWatchedInYear(int year){
         for (Movie movie: collection){
             if (movie.getReleaseYear() == year)
