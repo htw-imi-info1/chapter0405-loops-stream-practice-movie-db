@@ -4,12 +4,8 @@ public class Movie
     private int releaseYear = 0;
     private String title; 
 
-    public Movie(int releaseYear){
-        this.releaseYear = releaseYear;
-    }
-
     public Movie(int releaseYear, String title){
-        this(releaseYear);
+        this.releaseYear = releaseYear;
         this.title = title;
     }
 
@@ -20,6 +16,6 @@ public class Movie
     }
 
     public String toString(){
-        return "I'm an Movie object and my fields are: ...."+releaseYear; 
+        return ""+title+", released in: "+releaseYear; 
     }
 }
