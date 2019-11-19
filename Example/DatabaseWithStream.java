@@ -2,6 +2,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.stream.Collectors;
+import java.util.function.Predicate;
 public class DatabaseWithStream
 {
     ArrayList<Movie> collection = new ArrayList<>();
@@ -69,14 +70,16 @@ public class DatabaseWithStream
     - from a certain director
      */
     public int getDurationForYear(int year){
-        return collection.stream()
-        .filter(movie -> movie.getReleaseYear() == year)
-        .map(movie -> movie.getDuration())
-        .reduce(0, (sum, duration) -> sum + duration);
+        return getDurationForFilter(movie -> movie.getReleaseYear() == year);
     }
+
     public int getDurationForDirector(String director){
+        return getDurationForFilter(movie -> director.equals(movie.getDirector()));
+    }
+
+    public int getDurationForFilter(Predicate<Movie> filter){
         return collection.stream()
-        .filter(movie -> director.equals(movie.getDirector()))
+        .filter(filter)
         .map(movie -> movie.getDuration())
         .reduce(0, (sum, duration) -> sum + duration);
     }
