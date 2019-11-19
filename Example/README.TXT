@@ -22,6 +22,12 @@ Ex 5) add a director field to movie
 Ex 6) print all movies directed by a certain director
 Ex 7) delete all movies from a certain director
 
+-- and to practice reduce:
+Ex 14) add a duration field to movie
+Ex 15) how long would it take to watch all movies
+        - in a given year
+        - from a certain director
+
 -- more plain for loop
 Ex 8) in ArrayAndForLoop, add a method int min(int[] a) that returns the index of the smallest element.
 Ex 9) in ArrayAndForLoop, add a method int sum(int[] a) that returns the sum of all elements in the array.
